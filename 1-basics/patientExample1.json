@@ -1,0 +1,15 @@
+{
+	"resourceType" : "Patient",
+	"name" : [
+		{
+		"family" : "NOM",
+		"given" : "Prenom"
+	}],
+	"birthDate" : "2000-00-00",
+	"identifier" : [
+		{
+			"system" : "https://lifen.fr/identifier",
+			"value" :"33"
+		}
+	]
+}

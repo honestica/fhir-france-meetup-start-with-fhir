@@ -1,0 +1,23 @@
+{
+	"resourceType": "Observation",
+	"status": "final",
+	"code": {
+	  "coding": [
+		{
+		  "system": "http://loinc.org",
+		  "code": "29463-7",
+		  "display": "Body Weight"
+		}
+	  ]
+	},
+	"subject": {
+	  "reference": "Patient/xxxxxx"
+	},
+	"effectiveDateTime": "2019-12-24",
+	"valueQuantity": {
+	  "value": 30,
+	  "unit": "kg",
+	  "system": "http://unitsofmeasure.org",
+	  "code": "kg"
+	}
+  }
