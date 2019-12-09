@@ -13,9 +13,9 @@
 	"subject": {
 	  "reference": "Patient/xxxxxx"
 	},
-	"effectiveDateTime": "xxxx-xx-xx",
+	"effectiveDateTime": "2019-12-24",
 	"valueQuantity": {
-	  "value": "xx",
+	  "value": 30,
 	  "unit": "kg",
 	  "system": "http://unitsofmeasure.org",
 	  "code": "kg"

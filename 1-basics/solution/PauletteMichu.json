@@ -2,14 +2,15 @@
 	"resourceType" : "Patient",
 	"name" : [
 		{
-		"family" : "NOM",
-		"given" : "Prenom"
+		"family" : "MICHU",
+		"given" : "Paulette"
 	}],
-	"birthDate" : "aaaa-mm-dd",
+	"gender":"female",
+	"birthDate" : "1938-03-05",
 	"identifier" : [
 		{
 			"system" : "http://lifen.fr/fhir/Identifier/EmployeeNumber",
-			"value" :"xx"
+			"value" :"42"
 		}
 	]
 }
