@@ -31,7 +31,7 @@
       {
     	"url" : "http://lifen.fr/fhir/StructureDefinition/Communication/Extension/Distance",
         "valueQuantity": {
-        	"value": 5000,
+        	"value": 10,
         	"unit": "m",
         	"system": "http://unitsofmeasure.org",
         	"code": "m"

@@ -1,0 +1,13 @@
+### Définition
+- Name : LifenCommunicationDistanceExtension
+- url : http://lifen.fr/fhir/StructureDefinition/Communication/Extension/Distance
+- Context : This extension is used in the Communication Resource
+- Short Definition : Approximate distance between sender and recipient. 
+- Definition: Approximate distance between the main location of the sender and the main location role of the recipient. 
+- Comment : - 
+- Cardinality : 0..1 (communication cannot have more than 1 distance)
+- Type : Distance
+- Invariants : No invariants
+- is Modifier : No (the communication distance do not affect that interpretation of the elements of the communication) 
+- Binding : (no binding - not a coded value)
+

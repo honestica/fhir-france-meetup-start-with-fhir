@@ -2,17 +2,17 @@ Lifen lance un programme pour récompenser nos utilisateurs les plus écologique
 Il faut construire une extension pour stocker le nombre de mètres parcourus par un courrier. 
 
 ### Définition
-Name : 
-url : 
-Context : 
-Short Definition : 
-Definition: 
-Comment : 
-Cardinality : 
-Type : 
-Invariants : 
-is Modifier : 
-Binding : 
+- Name : 
+- url : 
+- Context : 
+- Short Definition : 
+- Definition: 
+- Comment : 
+- Cardinality : 
+- Type : 
+- Invariants : 
+- is Modifier : 
+- Binding : 
 
 
 ### Build
