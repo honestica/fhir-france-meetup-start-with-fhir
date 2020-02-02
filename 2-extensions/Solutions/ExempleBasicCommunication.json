@@ -1,0 +1,39 @@
+{
+    "resourceType": "Communication",
+    "extension" : [{
+    	"url" : "http://lifen.fr/fhir/StructureDefinition/Communication/Extension/Distance",
+      "valueQuantity": {
+        	"value": 5000,
+        	"unit": "m",
+        	"system": "http://unitsofmeasure.org",
+        	"code": "m"
+     }
+  }],
+    "status": "completed",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://lifen.fr/fhir/ValueSet/communication-category",
+            "code": "MEDICAL_REPORT"
+          }
+        ]
+      }
+    ],
+    "recipient": [
+      {
+        "reference": "Device/975231"
+      }
+    ],
+    "sent": "2020-02-02T05:09:28+01:00",
+    "sender": {
+      "reference": "Practitioner/472337"
+    },
+    "payload": [
+      {
+        "contentReference": {
+          "reference": "DocumentReference/1309991"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,111 @@
+{
+    "resourceType": "Communication",
+    "id": "1461272",
+    "meta": {
+      "versionId": "4",
+      "lastUpdated": "2020-02-02T04:12:10.000+00:00",
+      "tag": [
+        {
+          "system": "https://www.lifen.fr/default",
+          "code": "DEFAULT",
+          "display": "Default tag"
+        },
+        {
+          "system": "http://lifen.fr/fhir/tag/processing/text-extraction",
+          "code": "EXTRACTED_CLEAN",
+          "display": "text content extracted and cleaned"
+        }
+      ]
+    },
+    "extension": [
+      {
+        "url": "http://lifen.fr/fhir/internal/StructureDefinition/communication-body",
+        "valueString": "\n\n\n(ref: Communication/1461272)\n\n\n****FIN****\n****FINFICHIER****\n"
+      },
+      {
+        "url": "http://lifen.fr/fhir/internal/StructureDefinition/communication-attachment",
+        "valueReference": {
+          "reference": "Binary/1432741"
+        }
+      },
+      {
+    	"url" : "http://lifen.fr/fhir/StructureDefinition/Communication/Extension/Distance",
+        "valueQuantity": {
+        	"value": 5000,
+        	"unit": "m",
+        	"system": "http://unitsofmeasure.org",
+        	"code": "m"
+        } 
+    }],
+    "basedOn": [
+      {
+        "reference": "CommunicationRequest/1461271"
+      }
+    ],
+    "status": "completed",
+    "category": [
+      {
+        "coding": [
+          {
+            "system": "http://lifen.fr/fhir/ValueSet/communication-category",
+            "code": "MEDICAL_REPORT"
+          }
+        ]
+      }
+    ],
+    "medium": [
+      {
+        "coding": [
+          {
+            "id": "279665",
+            "system": "http://lifen.fr/fhir/CodeSystem/communication-medium",
+            "code": "APICRYPT",
+            "display": "Jean-Christian.BALESTRO2@medical18.apicrypt.org"
+          }
+        ]
+      }
+    ],
+    "subject": {
+      "reference": "Patient/1432748"
+    },
+    "recipient": [
+      {
+        "extension": [
+          {
+            "url": "http://lifen.fr/fhir/StructureDefinition/communicationrequest-recipient-details",
+            "valueContactPoint": {
+              "id": "279665",
+              "extension": [
+                {
+                  "url": "http://interopsante.org/fhir/structuredefinition/fr-email-domain",
+                  "valueCoding": {
+                    "system": "http://interopsante.org/fhir/valueset/fr-email-domain",
+                    "code": "apicrypt",
+                    "display": "Apicrypt"
+                  }
+                }
+              ],
+              "system": "email",
+              "value": "Jean-Christian.BALESTRO2@medical18.apicrypt.org",
+              "use": "home"
+            }
+          }
+        ],
+        "reference": "Practitioner/30101"
+      }
+    ],
+    "sent": "2020-02-02T04:12:10+00:00",
+    "sender": {
+      "reference": "Practitioner/514348"
+    },
+    "payload": [
+      {
+        "contentReference": {
+          "reference": "DocumentReference/1432743"
+        }
+      },
+      {
+        "contentString": "Cher Ami\n"
+      }
+    ]
+  }

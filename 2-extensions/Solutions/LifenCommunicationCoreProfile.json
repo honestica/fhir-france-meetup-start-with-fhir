@@ -1,0 +1,466 @@
+{
+    "resourceType": "StructureDefinition",
+    "url": "http://lifen.fr/fhir/StructureDefinition/LifenCommunicationCoreProfile",
+    "name": "Lifen Communication Core Profile",
+    "status": "active",
+    "fhirVersion": "3.0.1",
+    "mapping": [
+      {
+        "identity": "workflow",
+        "uri": "http://hl7.org/fhir/workflow",
+        "name": "Workflow Mapping"
+      },
+      {
+        "identity": "w5",
+        "uri": "http://hl7.org/fhir/w5",
+        "name": "W5 Mapping"
+      },
+      {
+        "identity": "rim",
+        "uri": "http://hl7.org/v3",
+        "name": "RIM Mapping"
+      }
+    ],
+    "kind": "resource",
+    "abstract": false,
+    "type": "Communication",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+    "derivation": "constraint",
+    "differential": {
+      "element": [
+        {
+          "id": "Communication.id",
+          "path": "Communication.id",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.meta",
+          "path": "Communication.meta",
+          "type": [
+            {
+              "code": "Meta",
+              "profile": "http://lifen.fr/fhir/StructureDefinition/LifenMetaCoreProfile"
+            }
+          ],
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.implicitRules",
+          "path": "Communication.implicitRules",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.language",
+          "path": "Communication.language",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.text",
+          "path": "Communication.text",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.contained",
+          "path": "Communication.contained",
+          "max": "0"
+        },
+        {
+          "id": "Communication.extension",
+          "path": "Communication.extension",
+          "slicing": {
+            "discriminator": [
+              {
+                "type": "value",
+                "path": "url"
+              }
+            ],
+            "rules": "open"
+          }
+        },
+        {
+          "id": "Communication.extension:distance",
+          "path": "Communication.extension",
+          "sliceName": "distance",
+          "min": 0,
+          "max": "1",
+          "type": [
+            {
+              "code": "Extension",
+              "profile": "http://lifen.fr/fhir/StructureDefinition/Communication/Extension/Distance"
+            }
+          ]
+        },
+        {
+          "id": "Communication.identifier",
+          "path": "Communication.identifier",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.definition",
+          "path": "Communication.definition",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.basedOn",
+          "path": "Communication.basedOn",
+          "min": 1,
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.partOf",
+          "path": "Communication.partOf",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.status",
+          "path": "Communication.status",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.notDone",
+          "path": "Communication.notDone",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.notDoneReason",
+          "path": "Communication.notDoneReason",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.category",
+          "path": "Communication.category",
+          "min": 1,
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.category.coding",
+          "path": "Communication.category.coding",
+          "min": 1
+        },
+        {
+          "id": "Communication.category.coding.system",
+          "path": "Communication.category.coding.system",
+          "min": 1
+        },
+        {
+          "id": "Communication.category.coding.code",
+          "path": "Communication.category.coding.code",
+          "min": 1
+        },
+        {
+          "id": "Communication.medium",
+          "path": "Communication.medium",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.medium.coding",
+          "path": "Communication.medium.coding",
+          "min": 1
+        },
+        {
+          "id": "Communication.medium.coding.system",
+          "path": "Communication.medium.coding.system",
+          "min": 1
+        },
+        {
+          "id": "Communication.medium.coding.code",
+          "path": "Communication.medium.coding.code",
+          "min": 1
+        },
+        {
+          "id": "Communication.subject",
+          "path": "Communication.subject",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.recipient",
+          "path": "Communication.recipient",
+          "min": 1,
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.topic",
+          "path": "Communication.topic",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.context",
+          "path": "Communication.context",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.sent",
+          "path": "Communication.sent",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.received",
+          "path": "Communication.received",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.sender",
+          "path": "Communication.sender",
+          "min": 1,
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.reasonCode",
+          "path": "Communication.reasonCode",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.reasonReference",
+          "path": "Communication.reasonReference",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.payload",
+          "path": "Communication.payload",
+          "min": 1,
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.payload.id",
+          "path": "Communication.payload.id",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.payload.content[x]",
+          "path": "Communication.payload.content[x]",
+          "type": [
+            {
+              "code": "Reference",
+              "targetProfile": "http://hl7.org/fhir/StructureDefinition/Binary"
+            },
+            {
+              "code": "Reference",
+              "targetProfile": "http://hl7.org/fhir/StructureDefinition/DocumentReference"
+            }
+          ],
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        },
+        {
+          "id": "Communication.note",
+          "path": "Communication.note",
+          "constraint": [
+            {
+              "key": "ele-1",
+              "severity": "error",
+              "human": "All FHIR elements must have a @value or children",
+              "expression": "hasValue() | (children().count() > id.count())",
+              "xpath": "@value|f:*|h:div"
+            }
+          ]
+        }
+      ]
+    }
+  }
